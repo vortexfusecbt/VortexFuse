@@ -556,7 +556,19 @@
 //   syllabus: "Describe the syllabus and instructions for this test here."
 // }
 // ---------------------------------------------------------------------------
-const TESTS = [];
+const TESTS = [ {
+//   title: "Full Syllabus Mock Test #1",
+//   category: "jee-main",       // 'jee-main' | 'jee-advanced'
+//   scope: "full-syllabus",     // 'full-syllabus' | 'chapter-wise'
+//   subject: "Physics, Chemistry, Maths",
+//   duration: "180 mins",
+//   marks: "300 marks",
+//   questions: 90,
+//   date: "2026-08-24T09:00:00",
+//   status: "live",             // 'live' | 'upcoming' | 'closed'
+//   fileUrl: "QPT_5_CBT.html",
+//   syllabus: "Describe the syllabus and instructions for this test here."
+// }];
 
 // ---------------------------------------------------------------------------
 // 2. ANNOUNCEMENTS — currently empty. Example shape:
@@ -587,7 +599,33 @@ const SCHEDULE = [];
 //   url: "https://t.me/your_channel",
 // }
 // ---------------------------------------------------------------------------
-const COMMUNITY_LINKS = [];
+const COMMUNITY_LINKS = [const SCHEDULE = [
+  { 
+    title: "JEE Main Full Mock #1", 
+    date: "2026-08-24T09:00:00", 
+    type: "Full Syllabus · JEE Main" 
+  }
+];
+
+const COMMUNITY_LINKS = [
+  {
+    name: "VortexFuse Official",
+    desc: "Primary channel for platform announcements, test schedules, and NTA updates.",
+    members: "1.2k",
+    icon: "fa-telegram",
+    platform: "Telegram Channel",
+    url: "https://t.me/VortexFuse", // Replace with your actual link
+  },
+  {
+    name: "VortexFuse CBT",
+    desc: "Daily PCM study materials, handwritten notes, and chapter-wise formula sheets.",
+    members: "5k+",
+    icon: "fa-Instagram",
+    platform: "Instagram Channel",
+    url: "@vortexfuse",
+  }
+];
+      ];
 
 /* =============================================================================================
    RENDER LAYER — reads the data arrays above and paints the UI. No edits needed here for
