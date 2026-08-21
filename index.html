@@ -1,85 +1,1006 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VortexFuse | Professional Test Series</title>
-    <!-- Tailwind CSS for styling -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VortexFuse — JEE Main &amp; Advanced CBT Platform</title>
+    <meta name="description" content="VortexFuse is the master hub for JEE Main and JEE Advanced aspirants — live CBT mock tests, official announcements, schedules and doubt-solving communities." />
+    <link rel="icon" type="image/webp" href="data:image/webp;base64,UklGRoQEAABXRUJQVlA4IHgEAACwFQCdASpAAEAAPlEijkUjoiEUDf2oOAUEswBihBwV/dnDg+wHmA6Cv+R9QD+7dR5z7nsUful6UVMf/MZBtarohd3lqQKgkd3+m9lH+3/73lN+kv/B7gX6udaj9jFsJZC9O/v9ting8tdoi2d9Tquph358mA+ViaBZOJD/HPaPjepf6CKd99KjlvTgAtbOPi+gyCe1WD2kFwpZZhgLxOcTYq/CFPatrCLI4cI3J3fNAPEBp17U8AD+/+W5YTnm3rwRnt8vb2u0c2kH2FEa2c+XhpG9zkVbFf1YXsz3aTUag/X52F1fCV5/guS5S/6dVyZ1eK3+xNZ3blMPFBYjt0q9UCf6l/Csfj7sZVMTnP6by969tlsgazWyxJfpPpNCYA8gh6d6HuYAXVcQMUxSI72M8ZpWLfrUGKf721kVdxdyXlkhs+ecMbd0u7JhjZWzwVxRuO2CLzQH0zzI6v8kGJ/8YVhxQTv/XksXJnlx+XrBBwFzBXNulTaoAE7UBwHq4X4czWsdm+NOvE96O9Llw+2FvtvdSmbv3e8vh7u4yzM8ab37PuKIq+OWXIDE1gDJHRfawesM7entZDnf8K2XzpJ6z36Ky9ZSKMw8JYcZ5xiC9t5WgIbZ4ysNy2q/QD9Gj6qMwW/gbMFpnXtSrf4famql2bUM2xsa/mNstnBfnm28wVgSA+Rgij15ly6jUvSPJsm4C4xU5ponaJ88m32cdWRBDKZL7i/3mj3FgHp2j17fDtTAAt69CK5GedJkczmBflthSkiI+9hsaeUPATRhluJ3ugvLZtunNjmm9vnCeJS1bSaLKw+d+XIncUcWrL7g8UFZ/VcBR5YRwW3sJWoD1beJLactRE+BWkTio5vM8Yj0zmZIhhs4BM0x+bzOA4w2yCHfsMFFERotRE6sQ8+aZ00uqtSfXRCEC1WfHV4nt7W7dIUJBBfV6xC2XKjUNG2OKFKdqaBTvd7caGHISBEo6d97XhIFfJ9w2nOCU/duGSjbeOv039cwGgW/mcP/up9OHx9bxd2FHBhkSMbxHccKLw5yp7trraolIlf5HuiKSOc77Uq7uvdz840VxKN9Haq3G8dQwLOXlzQEjRf2ttpeO3Jz6e5cKhhChNgURF1sBS0mbgbCYL9/D9HOC46y3Pung7mV6THf+ZDWOqkZE5cnZDNitEbXsyckVClskQRsVAEsOxzniEEmXWN5gv/VX8Fj/+6/8q9taegtoYmdETMK23Y7hq1rBSAfUbsV/g1dE8PrLoBV9kkU1U8qU/nPxI1inodsW8j/4xewR9/eIEJWQUjvEjnNy89WAwGucvMhjiq+qcbR3LEgfCd3eopddzgW5vquz8BEHTPHU/QKZr9UvTOaP/DX2NoxshZeFff/4suEf0dyA6Vny+Y+kV997po/ujCDHg/Y8wDyU1GiDR+3NMtr08fn0vJDAIrTCPGJaRLZZ/k3qjmPL/slCMCNNE1zVbGqbHIFALR3Uq4pa8myXcUeOeU5EDRdreWqNBd4d5fPDjfscTFNAAAA" />
+    <!-- ===================== FONTS ===================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+    <!-- ===================== TAILWIND CDN ===================== -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for professional icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-</head>
-<body class="bg-slate-50 font-sans text-slate-800">
+    <!-- ===================== ICONS ===================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+<script>
+  // ===================== THE MIDNIGHT PALETTE =====================
+  // Deep slate backdrop for reduced eye strain during 3-hour mock tests,
+  // paired with electric indigo and vibrant coral accents.
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          ink: {
+            950: '#0B0F19', // Deepest slate (Backgrounds)
+            900: '#0F172A', // Slate 900 (Main body)
+            800: '#1E293B', // Slate 800 (Cards/Surfaces)
+            700: '#334155', // Slate 700 (Borders)
+            600: '#475569', // Slate 600 (Muted text)
+          },
+          volt: {
+            300: '#A5B4FC', // Soft indigo
+            400: '#818CF8', // Bright indigo
+            500: '#6366F1', // Primary brand indigo
+            600: '#4F46E5', // Deep indigo
+          },
+          ember: {
+            300: '#FDA4AF', // Soft coral
+            400: '#FB7185', // Bright coral
+            500: '#F43F5E', // Primary alert/accent coral
+            600: '#E11D48', // Deep coral
+            700: '#BE123C', 
+          },
+        },
+        fontFamily: {
+          display: ['Space Grotesk', 'sans-serif'],
+          body: ['Inter', 'sans-serif'],
+          mono: ['JetBrains Mono', 'monospace'],
+        },
+        boxShadow: {
+          glow: '0 0 0 1px rgba(244,63,94,0.16), 0 8px 30px -8px rgba(244,63,94,0.4)',
+          'glow-lg': '0 0 44px -6px rgba(244,63,94,0.5)',
+          'glow-volt': '0 0 0 1px rgba(99,102,241,0.18), 0 8px 30px -8px rgba(99,102,241,0.45)',
+          card: '0 1px 2px rgba(11,15,25,0.04), 0 8px 24px -12px rgba(11,15,25,0.18)',
+          'card-hover': '0 20px 40px -16px rgba(11,15,25,0.28)',
+        },
+        keyframes: {
+          pulseDot: {
+            '0%, 100%': { boxShadow: '0 0 0 0 rgba(244,63,94,0.55)' },
+            '70%': { boxShadow: '0 0 0 8px rgba(244,63,94,0)' },
+          },
+          pulseDotVolt: {
+            '0%, 100%': { boxShadow: '0 0 0 0 rgba(99,102,241,0.55)' },
+            '70%': { boxShadow: '0 0 0 8px rgba(99,102,241,0)' },
+          },
+          ticker: {
+            '0%': { transform: 'translateX(0)' },
+            '100%': { transform: 'translateX(-50%)' },
+          },
+          floatSlow: {
+            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+            '50%': { transform: 'translateY(-10px) rotate(3deg)' },
+          },
+          spinSlow: {
+            '0%': { transform: 'rotate(0deg)' },
+            '100%': { transform: 'rotate(360deg)' },
+          },
+          fadeUp: {
+            '0%': { opacity: 0, transform: 'translateY(14px)' },
+            '100%': { opacity: 1, transform: 'translateY(0)' },
+          },
+        },
+        animation: {
+          pulseDot: 'pulseDot 2s infinite',
+          pulseDotVolt: 'pulseDotVolt 2s infinite',
+          ticker: 'ticker 28s linear infinite',
+          floatSlow: 'floatSlow 7s ease-in-out infinite',
+          spinSlow: 'spinSlow 14s linear infinite',
+          fadeUp: 'fadeUp 0.6s ease both',
+        },
+      },
+    },
+  };
+</script>
+    <style>
+  /* ===================== BASE ===================== */
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background:#f5f6fa; }
+  h1,h2,h3,h4,.font-display { font-family: 'Space Grotesk', sans-serif; }
+  .font-mono-num { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
 
-    <!-- Navigation Bar -->
-    <nav class="bg-blue-900 text-white shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 items-center">
-                <div class="flex-shrink-0 flex items-center gap-2">
-                    <i class="fas fa-bolt text-orange-500 text-2xl"></i>
-                    <span class="font-bold text-2xl tracking-wide">Vortex<span class="text-orange-500">Fuse</span></span>
-                </div>
-                <div>
-                    <span class="text-sm font-medium bg-blue-800 py-1 px-3 rounded-full border border-blue-700 shadow-inner">Student Dashboard</span>
-                </div>
-            </div>
-        </div>
-    </nav>
+  /* ===================== SIGNATURE: honeycomb backdrop, lifted straight from the logo's hex texture ===================== */
+  .hex-bg {
+    background-color: #04060d;
+    background-image:
+      linear-gradient(30deg, rgba(56,189,248,0.07) 12%, transparent 12.5%, transparent 87%, rgba(56,189,248,0.07) 87.5%, rgba(56,189,248,0.07)),
+      linear-gradient(150deg, rgba(56,189,248,0.07) 12%, transparent 12.5%, transparent 87%, rgba(56,189,248,0.07) 87.5%, rgba(56,189,248,0.07)),
+      linear-gradient(30deg, rgba(56,189,248,0.07) 12%, transparent 12.5%, transparent 87%, rgba(56,189,248,0.07) 87.5%, rgba(56,189,248,0.07)),
+      linear-gradient(150deg, rgba(56,189,248,0.07) 12%, transparent 12.5%, transparent 87%, rgba(56,189,248,0.07) 87.5%, rgba(56,189,248,0.07)),
+      linear-gradient(60deg, rgba(249,115,22,0.055) 25%, transparent 25.5%, transparent 75%, rgba(249,115,22,0.055) 75%, rgba(249,115,22,0.055)),
+      linear-gradient(60deg, rgba(249,115,22,0.055) 25%, transparent 25.5%, transparent 75%, rgba(249,115,22,0.055) 75%, rgba(249,115,22,0.055));
+    background-size: 56px 98px;
+    background-position: 0 0, 0 0, 28px 49px, 28px 49px, 0 0, 28px 49px;
+  }
 
-    <!-- Hero Header -->
-    <div class="bg-white border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-extrabold text-blue-900">Live CBT Test Series</h1>
-            <p class="mt-2 text-sm text-slate-500">Attempt live mock tests for JEE Main and Advanced. Interface optimized for actual exam simulation.</p>
+  .ink-gradient { background: radial-gradient(130% 150% at 8% -15%, #131a35 0%, #080b16 42%, #04060d 100%); }
+
+  /* dual-tone swirl gradient — the one signature accent, used sparingly */
+  .swirl-text {
+    background: linear-gradient(92deg, #38bdf8 0%, #7dd8ff 22%, #f97316 62%, #ea580c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .swirl-ring {
+    background: conic-gradient(from 180deg, #38bdf8, #7dd8ff, #f97316, #ea580c, #38bdf8);
+  }
+
+  .glass {
+    background: rgba(19,26,53,0.5);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  ::-webkit-scrollbar { height:8px; width:8px; }
+  ::-webkit-scrollbar-thumb { background:#cbd5e1; border-radius:99px; }
+  ::-webkit-scrollbar-thumb:hover { background:#94a3b8; }
+
+  .live-dot { animation: pulseDot 2s infinite; }
+  .live-dot-volt { animation: pulseDotVolt 2s infinite; }
+
+  .ticker-track { animation: ticker 28s linear infinite; }
+  .ticker-wrap:hover .ticker-track { animation-play-state: paused; }
+
+  .card-lift { transition: transform .35s cubic-bezier(.2,.8,.2,1), box-shadow .35s ease, border-color .35s ease; }
+  .card-lift:hover { transform: translateY(-6px); }
+
+  .tab-btn.active {
+    background: linear-gradient(120deg,#0ea5e9,#f97316);
+    color:#fff;
+    box-shadow: 0 8px 20px -6px rgba(249,115,22,0.45);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  :focus-visible { outline: 2px solid #0ea5e9; outline-offset: 2px; border-radius: 4px; }
+
+  .fade-item { opacity:0; }
+  .fade-item.in { animation: fadeUp .6s cubic-bezier(.2,.8,.2,1) both; }
+
+  .hide-scrollbar::-webkit-scrollbar{ display:none; }
+  .hide-scrollbar { -ms-overflow-style:none; scrollbar-width:none; }
+
+  .modal-backdrop { background: rgba(4,6,13,0.72); backdrop-filter: blur(4px); }
+
+  .dash-border {
+    background-image: repeating-linear-gradient(90deg, #cbd5e1 0 8px, transparent 8px 16px);
+    height: 1px;
+  }
+
+  .logo-ring { animation: spinSlow 14s linear infinite; }
+</style>
+  </head>
+  <body class="text-ink-900 antialiased">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] bg-ember-500 text-white px-4 py-2 rounded-lg">Skip to content</a>
+    <!-- =========================================================================================
+    HEADER / STICKY NAVBAR
+    ========================================================================================= -->
+    <header id="site-header" class="sticky top-0 z-50 transition-all duration-300">
+      <div class="ink-gradient border-b border-white/5">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+          <!-- Brand -->
+          <a href="#main-content" class="flex items-center gap-3 group">
+            <span class="relative flex h-11 w-11 items-center justify-center shrink-0">
+              <span class="absolute inset-0 rounded-full swirl-ring opacity-60 blur-[3px] group-hover:opacity-90 transition-opacity">
+              </span>
+              <img src="data:image/webp;base64,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" alt="VortexFuse logo" class="relative h-9 w-9 rounded-full object-cover ring-2 ring-ink-950" />
+            </span>
+            <span class="flex flex-col leading-none">
+              <span class="font-display font-bold text-lg sm:text-xl text-white tracking-tight">Vortex<span class="swirl-text">Fuse</span>
+            </span>
+            <span class="text-[9px] font-semibold tracking-[0.2em] text-slate-400 uppercase mt-0.5">CBT Platform</span>
+          </span>
+        </a>
+        <!-- Desktop nav links -->
+        <div class="hidden md:flex items-center gap-1">
+          <a href="#tests" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Tests</a>
+          <a href="#schedule" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Schedule</a>
+          <a href="#announcements" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Announcements</a>
+          <a href="#community" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">Community</a>
         </div>
+        <!-- Actions -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <a href="#community" class="relative hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-volt-500 to-ember-500 hover:brightness-110 text-white text-sm font-semibold px-4 py-2 rounded-full shadow-glow transition-all">
+            <i class="fa-brands fa-telegram text-base">
+            </i>
+            Join Community
+            <span class="absolute -top-1.5 -right-1.5 flex h-4 w-4">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white/70">
+              </span>
+              <span class="relative inline-flex rounded-full h-4 w-4 bg-white text-ember-600 text-[9px] items-center justify-center font-bold">!</span>
+            </span>
+          </a>
+          <!-- Notification bell -->
+          <button id="notif-btn" class="relative h-10 w-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-colors" aria-label="Open announcements">
+            <i class="fa-regular fa-bell text-lg">
+            </i>
+            <span id="notif-dot" class="absolute top-1.5 right-1.5 h-2 w-2 rounded-full bg-volt-400 live-dot-volt hidden">
+            </span>
+          </button>
+          <!-- Mobile menu toggle -->
+          <button id="mobile-menu-btn" class="md:hidden h-10 w-10 flex items-center justify-center rounded-full text-slate-300 hover:text-white hover:bg-white/5 transition-colors" aria-label="Open menu" aria-expanded="false">
+            <i class="fa-solid fa-bars text-lg">
+            </i>
+          </button>
+        </div>
+      </nav>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden border-t border-white/5 px-4 pb-4 pt-2 space-y-1 bg-ink-900/95">
+        <a href="#tests" class="block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 text-sm font-medium">Tests</a>
+        <a href="#schedule" class="block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 text-sm font-medium">Schedule</a>
+        <a href="#announcements" class="block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 text-sm font-medium">Announcements</a>
+        <a href="#community" class="block px-3 py-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/5 text-sm font-medium">Community</a>
+        <a href="#community" class="mt-2 flex items-center justify-center gap-2 bg-gradient-to-r from-volt-500 to-ember-500 text-white text-sm font-semibold px-4 py-2.5 rounded-full">
+          <i class="fa-brands fa-telegram">
+          </i> Join Community
+        </a>
+      </div>
     </div>
-
-    <!-- Test Cards Section -->
-    <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-        <h2 class="text-xl font-bold text-slate-700 mb-6 border-l-4 border-orange-500 pl-3">Available Mock Exams</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            
-            <!-- TEST CARD 1: JEE MAIN -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 hover:shadow-xl transition-shadow duration-300">
-                <div class="bg-blue-50 px-4 py-3 border-b border-blue-100 flex justify-between items-center">
-                    <span class="text-xs font-bold text-blue-700 uppercase tracking-wider">JEE Main</span>
-                    <span class="text-xs font-semibold text-green-700 bg-green-100 px-2 py-1 rounded border border-green-200">Active</span>
-                </div>
-                <div class="p-5">
-                    <h3 class="text-lg font-bold text-slate-800 mb-2">Full Syllabus Mock Test 1</h3>
-                    <div class="text-sm text-slate-600 mb-5 space-y-2">
-                        <p><i class="far fa-clock text-orange-500 w-5"></i> 180 Minutes</p>
-                        <p><i class="fas fa-clipboard-check text-orange-500 w-5"></i> 300 Marks</p>
-                    </div>
-                    <!-- IMPORTANT: Replace YOUR_FILE_NAME_HERE.html below -->
-                    <a href="QPT_5_CBT.html" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 shadow-md">
-                        Start Exam
-                    </a>
-                </div>
-            </div>
-
-            <!-- TEST CARD 2: JEE ADVANCED -->
-            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-slate-200 hover:shadow-xl transition-shadow duration-300">
-                <div class="bg-orange-50 px-4 py-3 border-b border-orange-100 flex justify-between items-center">
-                    <span class="text-xs font-bold text-orange-700 uppercase tracking-wider">JEE Advanced</span>
-                    <span class="text-xs font-semibold text-green-700 bg-green-100 px-2 py-1 rounded border border-green-200">Active</span>
-                </div>
-                <div class="p-5">
-                    <h3 class="text-lg font-bold text-slate-800 mb-2">Advanced Paper 1</h3>
-                    <div class="text-sm text-slate-600 mb-5 space-y-2">
-                        <p><i class="far fa-clock text-blue-600 w-5"></i> 180 Minutes</p>
-                        <p><i class="fas fa-layer-group text-blue-600 w-5"></i> Physics, Chemistry, Math</p>
-                    </div>
-                    <!-- IMPORTANT: Replace YOUR_SECOND_FILE_NAME_HERE.html below -->
-                    <a href="YOUR_SECOND_FILE_NAME_HERE.html" class="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-4 rounded-lg transition-colors duration-200 shadow-md">
-                        Start Exam
-                    </a>
-                </div>
-            </div>
-
+    <!-- ===================== BREAKING NEWS TICKER ===================== -->
+    <div id="ticker-wrap" class="ticker-wrap bg-ink-950 border-b border-white/5 overflow-hidden">
+      <div class="max-w-7xl mx-auto flex items-center">
+        <span class="hidden sm:flex items-center gap-2 shrink-0 bg-gradient-to-r from-volt-600 to-ember-600 text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1.5">
+          <i class="fa-solid fa-tower-broadcast text-[10px]">
+          </i> Live Updates
+        </span>
+        <div class="relative flex-1 overflow-hidden h-8 flex items-center">
+          <div id="ticker-track" class="ticker-track absolute whitespace-nowrap flex items-center gap-10 text-xs sm:text-[13px] text-slate-300 font-medium pl-6">
+          </div>
+          <p id="ticker-empty" class="hidden text-xs sm:text-[13px] text-slate-500 font-medium pl-6">No live updates yet — new announcements will scroll here.</p>
         </div>
+      </div>
     </div>
+  </header>
+  <main id="main-content">
+    <!-- =========================================================================================
+    HERO SECTION
+    ========================================================================================= -->
+    <section class="relative ink-gradient hex-bg overflow-hidden">
+      <div class="pointer-events-none absolute -top-10 -right-16 w-72 h-72 bg-ember-500/20 rounded-full blur-3xl animate-floatSlow">
+      </div>
+      <div class="pointer-events-none absolute bottom-0 left-10 w-64 h-64 bg-volt-500/20 rounded-full blur-3xl animate-floatSlow" style="animation-delay:1.5s">
+      </div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-14 pb-16 sm:pt-20 sm:pb-24 relative">
+        <div class="grid lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-7 fade-item" data-fade>
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/5 border border-white/10 text-volt-300 text-xs font-semibold px-3.5 py-1.5 mb-5">
+              <span class="h-1.5 w-1.5 rounded-full bg-ember-500 live-dot">
+              </span>
+              Session 2026&ndash;27 Test Series
+            </span>
+            <h1 class="font-display font-bold text-white text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.08] tracking-tight">
+              Every mock test between you and <span class="swirl-text">AIR&nbsp;1</span>.
+            </h1>
+            <p class="mt-5 text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed">
+              VortexFuse is the single command center for JEE Main &amp; Advanced aspirants — full-syllabus CBTs, chapter-wise drills, instant NTA-pattern analysis, and a live cohort on the same syllabus as you.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-3">
+              <a href="#tests" class="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-volt-500 to-ember-500 hover:shadow-glow-lg text-white font-semibold px-6 py-3.5 rounded-xl shadow-glow transition-all hover:-translate-y-0.5">
+                <i class="fa-solid fa-bolt">
+                </i> Browse Live Tests
+              </a>
+              <a href="#schedule" class="inline-flex items-center justify-center gap-2 glass text-white font-semibold px-6 py-3.5 rounded-xl hover:bg-white/10 transition-all">
+                <i class="fa-regular fa-calendar-days">
+                </i> View Schedule
+              </a>
+            </div>
+          </div>
+          <!-- Live metrics bar card -->
+          <div class="lg:col-span-5 fade-item" data-fade style="animation-delay:.1s">
+            <div class="glass rounded-2xl p-5 sm:p-6 shadow-2xl">
+              <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-4 flex items-center gap-2">
+                <i class="fa-solid fa-chart-simple text-ember-500">
+                </i> Platform Pulse
+              </p>
+              <div class="grid grid-cols-2 gap-4">
+                <div class="rounded-xl bg-white/5 border border-white/10 p-4">
+                  <p class="font-mono-num text-2xl sm:text-3xl font-bold text-white" data-counter="0">0</p>
+                  <p class="text-slate-400 text-xs mt-1">Mock Tests Live</p>
+                </div>
+                <div class="rounded-xl bg-white/5 border border-white/10 p-4">
+                  <p class="font-mono-num text-2xl sm:text-3xl font-bold text-white" data-counter="0">0</p>
+                  <p class="text-slate-400 text-xs mt-1">Active Aspirants</p>
+                </div>
+                <div class="rounded-xl bg-white/5 border border-white/10 p-4">
+                  <p class="font-mono-num text-2xl sm:text-3xl font-bold text-white">
+                    <span data-counter="0">0</span>
+                    <span class="text-ember-400">s</span>
+                  </p>
+                  <p class="text-slate-400 text-xs mt-1">Instant Analysis</p>
+                </div>
+                <div class="rounded-xl bg-white/5 border border-white/10 p-4">
+                  <p class="font-mono-num text-2xl sm:text-3xl font-bold text-white" data-counter="0">0</p>
+                  <p class="text-slate-400 text-xs mt-1">% Uptime, CBT Grade</p>
+                </div>
+              </div>
+              <p class="text-slate-500 text-[11px] mt-4 leading-relaxed">
+                <i class="fa-solid fa-circle-info mr-1">
+                </i>These figures update automatically once you add tests and traffic data.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================================================================================
+      ANNOUNCEMENTS / NOTICE BOARD
+      ========================================================================================= -->
+      <section id="announcements" class="bg-white border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+          <div class="flex items-end justify-between mb-8">
+            <div>
+              <p class="text-ember-600 text-xs font-bold uppercase tracking-widest mb-2">Notice Board</p>
+              <h2 class="font-display font-bold text-2xl sm:text-3xl text-ink-900">Breaking Announcements</h2>
+            </div>
+            <button id="view-all-notices" class="hidden sm:inline-flex items-center gap-1.5 text-sm font-semibold text-ink-700 hover:text-ember-600 transition-colors">
+              View all <i class="fa-solid fa-arrow-right text-xs">
+            </i>
+          </button>
+        </div>
+        <div id="announcement-list" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================================================
+    TEST SERIES HUB
+    ========================================================================================= -->
+    <section id="tests" class="bg-slate-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="mb-8">
+          <p class="text-ember-600 text-xs font-bold uppercase tracking-widest mb-2">Test Series Hub</p>
+          <h2 class="font-display font-bold text-2xl sm:text-3xl text-ink-900">Find your next CBT</h2>
+          <p class="text-slate-500 mt-2 max-w-2xl">Filter by exam type, search by subject, and jump straight into an NTA-pattern computer based test.</p>
+        </div>
+        <!-- Filters + Search -->
+        <div class="flex flex-col lg:flex-row lg:items-center gap-4 mb-8">
+          <div id="filter-tabs" class="flex gap-2 overflow-x-auto hide-scrollbar pb-1 lg:pb-0">
+          </div>
+          <div class="relative flex-1 max-w-md lg:ml-auto">
+            <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm">
+            </i>
+            <input id="test-search" type="text" placeholder="Search tests by title or subject…"
+              class="w-full pl-11 pr-4 py-2.5 rounded-xl border border-slate-200 bg-white text-sm text-ink-900 placeholder:text-slate-400 focus:border-volt-500 focus:ring-2 focus:ring-volt-500/20 outline-none transition-all" />
+            </div>
+          </div>
+          <!-- Test cards grid -->
+          <div id="test-grid" class="grid sm:grid-cols-2 xl:grid-cols-3 gap-5">
+          </div>
+        </div>
+      </section>
+      <!-- =========================================================================================
+      SCHEDULE + COUNTDOWN
+      ========================================================================================= -->
+      <section id="schedule" class="bg-ink-900 relative overflow-hidden hex-bg">
+        <div class="pointer-events-none absolute top-10 right-10 w-56 h-56 bg-ember-500/10 rounded-full blur-3xl">
+        </div>
+        <div class="pointer-events-none absolute bottom-10 left-10 w-56 h-56 bg-volt-500/10 rounded-full blur-3xl">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative">
+          <div class="mb-10">
+            <p class="text-ember-500 text-xs font-bold uppercase tracking-widest mb-2">Roadmap</p>
+            <h2 class="font-display font-bold text-2xl sm:text-3xl text-white">Upcoming CBT Schedule</h2>
+            <p class="text-slate-400 mt-2 max-w-2xl">Mark these dates — every full-syllabus test opens exactly on time, NTA-style.</p>
+          </div>
+          <div class="grid lg:grid-cols-5 gap-8">
+            <!-- Next test countdown -->
+            <div class="lg:col-span-2 glass rounded-2xl p-6 flex flex-col justify-between shadow-2xl">
+              <div>
+                <p class="text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1">Next Test Starts In</p>
+                <p id="countdown-title" class="text-white font-display font-semibold text-lg mb-5">No tests scheduled yet</p>
+              </div>
+              <div class="grid grid-cols-4 gap-2 text-center">
+                <div class="bg-white/5 border border-white/10 rounded-xl py-3">
+                  <p id="cd-days" class="font-mono-num text-white text-2xl font-bold">00</p>
+                  <p class="text-[10px] text-slate-400 uppercase tracking-wider mt-1">Days</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl py-3">
+                  <p id="cd-hours" class="font-mono-num text-white text-2xl font-bold">00</p>
+                  <p class="text-[10px] text-slate-400 uppercase tracking-wider mt-1">Hrs</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl py-3">
+                  <p id="cd-mins" class="font-mono-num text-white text-2xl font-bold">00</p>
+                  <p class="text-[10px] text-slate-400 uppercase tracking-wider mt-1">Min</p>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl py-3">
+                  <p id="cd-secs" class="font-mono-num text-ember-400 text-2xl font-bold">00</p>
+                  <p class="text-[10px] text-slate-400 uppercase tracking-wider mt-1">Sec</p>
+                </div>
+              </div>
+              <a id="countdown-cta" href="#tests" class="mt-5 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-volt-500 to-ember-500 text-white font-semibold px-5 py-3 rounded-xl shadow-glow hover:-translate-y-0.5 transition-transform">
+                <i class="fa-solid fa-bolt">
+                </i> View Test Details
+              </a>
+            </div>
+            <!-- Timeline -->
+            <div class="lg:col-span-3">
+              <ol id="timeline-list" class="relative border-l border-white/10 ml-2 space-y-7">
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- =========================================================================================
+      COMMUNITY / DISCUSSION HUB
+      ========================================================================================= -->
+      <section id="community" class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+          <div class="mb-10 text-center max-w-2xl mx-auto">
+            <p class="text-ember-600 text-xs font-bold uppercase tracking-widest mb-2">Stay Connected</p>
+            <h2 class="font-display font-bold text-2xl sm:text-3xl text-ink-900">Your batch is already inside</h2>
+            <p class="text-slate-500 mt-2">Join the channels that match how you study — announcements, doubt-solving, or just the daily grind.</p>
+          </div>
+          <div id="community-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- =========================================================================================
+    FOOTER
+    ========================================================================================= -->
+    <footer class="bg-ink-950 text-slate-400">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="lg:col-span-1">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="data:image/webp;base64,UklGRpAqAABXRUJQVlA4IIQqAADQhQCdASrwAPAAPj0ei0QiIaEUbax4IAPEsTbuTq+ADaSFCFGlPrzkHlNVz+//3P9O/lp8rf9H5u9AeUNzT/z/8Z+XHy5/un/c9iP6F/7HuAfqt/tf8R+Qncn/cz1E/sL/1f9r7xX+4/YD3Pf3P/aewB/UP9L/8PXD9h39wPYH/aH0yf29+D7+1f7z9t/gU/ZL/4+wB///UA/+/F9bVvkF9Ke2f9+9yGww1HflH3F/Of2/92f8H+63z5/0/Gn4+f6PqC/kX89/yX9n/cj/CfGV8X3zevf779jvYL9j/qn+0/xf5L+lN/aei32S/3/uAf0H+lf73+2+4H+v8Zz7l/p/+f/bPgA/pv9X/5P+k91/+d/8f+Y/2H7w+1z88/wH/g/xv+q+Qr+Yf1n/jf5D/Pe+17Gf3B/+3utfs7/6CifcrQPusJACKi9UdV2S3URvEdlFcgQctmAR/TSwgEYxeNgmGw4JYZ+OIRSLMjpNWfv2DYaKUEJWji+Yy5GH2pK6rSLiMJxmJ+YiRXtFm0kXXlvIjVeJzDHJf+3aG2qr3/ScqRjqeyqSzqxI0kOEY+ISam/ExPYkp4WC09MjyQSBKKlRaAXCaisa41qpsNET/RFxMsv/5xCv0adQCQz97ZILFVlELgx0htiCEpgwoK9N2A51YM8yeyzU0cP4VAbLe69UmuG+PV/20kjElT5Kbv5fx6xBzejdjKnIKJjUF88S+vRTV0vlJH5Ld0pIQ/gumfKbvqzLuVpnVNSRXJlZdbyp89xB+gKCLoLWUyQeK/0/azPN/FZw0G6XmOW5SxDfAMBpnQe++kkLSln/eXftJGTD7FEEB96anLeJwAZO33Kj7iFrLhz46sRB39gXwHOg8pv6W9VDhoFhxXaZRlIfvvTcw4MOwe058d5n7rZObhGTK9gXtSmH1h//l6jn09HDQnqspsZrSW+kJ1h75y8/3o9jyBJnALMsrL15TLfRgPfbBWanRQCZDNgreGmQZtNVMrA1YuSArjE3qMFa1Ms1JWDy+VM8iXahLEuif3Hn89hEnyt3AegYZTd4pF/MZ0ftD7ShFMqhYt95yw2dqyo9FNRXlYKXHwWRNVAZ3LSMbl2vxynFE39Vt2fYoGqPEDf1WqgECNU3yOEzX8Ix69BUKtycpx5+JNtJg1zxoDz1fSwUE1ZO+wuqknyJGVyB2PskTl7b74qekekMhmzI6JUsTfR9Kc0keK2X6Rp+xzjBf6RJwrMHg30sSBwlTOATqSecgror3LTeNZWB8jis/t+9Q2tJAOmisG+ctb+GQ1pyQGO/DKMk0e10nXRFPJiznymYHelMfY/+k2iCD7WiyoEzjlJtiMU/YxPW0k0EBf1j2KO8m4JZX7tm07Rz7PekIwMFRIUClbjv8VceMQTh00JvdSMlFdJrvv+3QVpYBi4KmUxGJMpITPZqVH3AAAD+6O07fF279Pdb9A03g+reOmWYuvytcbJckIetFpHxIY8CjU5Isfh+x363+JJTPDNqRC4Dw/1h3YmTlVlw2mQsV2LNchNQG0Y0kDAWey8IF1/L4Z2BfQpuTex1mWXH5ccQvMRVEtZWKukmrqWB0WAZdAV+SvyVlF4xZfxS3ZBTu+qt1lyoCsDs5LRADmd+9mr4mLGSMQ1b9kJJ9hYugSBMgz1tXsB5SmrJPtJYFBdykNOlDnBZOFStdkYO5n3lPdaWoXq9SVGF2s8xEKbtIh7zjv4KqfGjuJBeGW3FjsRrkntVdp+xDgIn6NG2mJZyhkUJFRH6JjR+HvPSnjq1wCjBiwGwmRz+qlfJghlmvGiLg6CMvHAJpoooTZpcT3Own+koPOha0ehD9nV/bUkLl70MBdjRJJ5ZhLt0MCJXRGaKwgAqMKekwyzsDkUqSzEZBhx85Txqiq5ij0vij4rFS4AqlP9ETuo2XJNAYTB2xwSMy1vV7UcwnHTRPRQm2/59so2oVgFkQyHR4zCQA6/oveiDXAdY289NBuSZkj+bHt7sjdktMGg7H211H+frgkQGHdV08PULtKmfnp++AbLOU9u9mmFqcVDFHfk7efYugonjB89l3/A1U+3/kTMxrODm6squ3SIxBRAu092Wi4K5IojBxYgi6fSLUHG8bsLJS5GVmVwpLbHQnfaRi9pBn6bjJbcynx4cOvGY3qJEH5I9pjailOfGqXpZy5fm3wIUz/t8pfT95ezhiYPZJVbdD2UCWYnTgdkts+5kNeEtMIdt3fwtJoY8ypxZNtQxo96Ju1zVpsGWVr95cToZIgdOlirB7v+i+BZdLHDgNfTBmIKvIFUI2FHRg4suqFcj+KuMiWG3mjy0NADdooAvjc2YHx2/isoMs3EgYfM5GwDSPcP7wwTOCXC82TMphVnR2V03Lc/MgKyd7NcvSyNsHa26aTLo216hOZzQ0z1TipPNhKwhPbR37C5sTS9Ab3VK/6AT+1gfcuw8aaQu3nlgH3VMZOmLYmI/O5aphUSHJAWciBVAPiAjAbPk6FLgVWl79SgM1riL+VPavH/vGeL+1R4Fc8t6ObL/c3fledEMSmB0tgTtw/5hvtqZAOCPXWBqTez8hsep7HJ5L8JXU3KKXxAm1YZWnQM2WlAMCWPhMxmonse08FDavdmwf0dKlv8coTERpzVgDR61aJjr4cQM+hRPu8SRn2fkKEtYC9h5WZAvcwIQcTqeEfkJj2NvRutaQBnfH2WhfcKDaLLjpzXuWLnks/M+uVh4eSXLSOz/fbFZDWt2SYiG8vVJHnUHTEwfwVmnuKVTYnBaLw0A8NqjmlOqwVE3hj0LXQ2K4Az3EFSadveZU82faO2uZScrXfZULNAol/irBFGeKkE8SwVp1ewR0SF6nRNh2RFbb/GOX0fqQrS7iJNh5RrZDB4QkE/+x6pJqypZSx+YNJEiMNAnQ99IxLNlpEovNN62syGFjLo78KJVVN8lJGmWRHZwIdWBmziQbSzFji0ws0xZ08WSLPc+QbFf2su4m0uXoxZwD1vc1rrhUkUZXPZYtMom9ZiO5Dz2MZF1ojYek2XyV6bqjdDw0Gz4+FHf1iMhiwm7sNc2zG7QvoBV7py+AadKZk3EwcEPpL7nPC5+uiaHy+vXujiMZLLB3evKmfdGwwUtAq7w5TMGnrdeACH0LZNrYwP9dQ5Wa32g/oAoUFW4PUxDUwv3TAgJl/8H4HK6R9t/Ifj4fF7gYvRqUD7FS1E4wN1MDzCKoYx3TBlmQY+KpACAtTrPXARxlxTK0rGeDuOwiamm941ybEq4Ho3AzLDrII1fKe+Vt26e5PILoVa0+Tumw7QI77K2ax8b2D+h9MVHQA3eOIPI4ZPDVenwlhAn7L0o32NB2mJVbsKEXMzscPTPqHmaqaRCfU6K19l1oe53xu7wze/eg46RCsq/Pn9shC2VfVsR0hIEBta28Bg0A+jQ6sFC8OUL7hnyc3A3VBesZ7HXp4IazWKskk6TaUpTv62OI+AwXOhB8kd5/oWQ03NyGRAYVEejPfUnZTnGe1jktp1vv5HBnxRytjHR3q3isSQ/t6RX86m/i3IFto5b3GUoq4Tgpvd4NiZ8YCiJb2xYTsqiwS5P36mzVbEDpERTKSBAFA4RXO/7WNrI6k3dkG3RiJHmyzWJaR2dFAdZXdsPRt0fog2Y/d/uvtjdEQhqi66xsXQSJZMZkZ0r/6HaZ4SpmyRTK/op9IZPGuOm9d6swCekm8sebuC9xsRBPRFPctpX7i4QLIVUtpaIEP51e9kbJ5dU5JdbkqNXcVmV49FzrRcsBEvz9s0+zEYjZIlQiD1ikdUMcDQW1FUwUfW5SW+q3WWthR+TmjB+j2ecMAgz3k0nwd+8645FZkiZ00WVhHhXZqgVr7RwIh4m2YIYguovChWujC7seR8iiiKgOmUUua4peDHcgYmRJ7AkV14nc9jQ3b1PIdfBFelD3DatNu6fgsuGdV9/hiWiRl3DMZ9X0p1Qw2d6Mf2Vl6GVA4h0mOmQMuQAClmexl97//TcHTiQxSkyYvgNakmD9HGuqVSXc/3Ww/r7Bd7wSN2qvq8aayYIDfxD6q6N3vKA078QXHKza35rDmHl/qIR2L487CdCTg7WDQxAMpDj0x9t1n+Qm/jup8LduuojHjR+xcU8BW5DBwZbxPLdIRQ87kqtLVxxJCLUZ08mw8URCb/XQM0YMMTv7Oy83+nhp/ipH/t9Dhjtzk4B4qQ0huBNj6I5frXBd8vBxayMzKSIqYoLwbrrz3InAuOxIv6fYI2eb3qFq6e12dlhn8F/weY59KD7d+YNcVHd0/xyXkqNG9Itk0DR0cVtFy6MTzzTUR5lWht7jd4rr17Na0jUOwmqH8w3SAEl/bAoj7yPE4Xi6UaYQevkQW/6w6JQ+Jlvarvx80zsI+akMAcTPkdW1jxmm5FVgY4L2cwIsh0PwshxrJ/p+7nLv7Z45NXoUhupLJDbnrV7zmzSjLAt2RbWvaowx6D2axFAnIwRUFRyIKF75XNHVlxc1jYYxu8/99aLlfEPaYtA0yVuFdjvmX/0kN2kI9AYV19dze0ilM2/Xbw73MprEooSNhmD+KrLR+nTep2N6UiTG/dSEBNrX+Pa+JDpuwuw/zJ5LWsD+ATgfoY4djW2xvKRruaQYL9GKsu/cfmOmigL2xYPrV1OvFodIQkrAP0ol6Wdg+DoYx4sNIMdTbaxZ7EHXnz0y38exwoICAh080L2Hpd5M6+5aKnFvzIJfZxa3Ihk2Dfx4t66vQMZjEIgMpeD96835BOMQ+0pyMxuD741KSAvCgfUx3SZ8QfOrNKItUnBFaSK7IBuXtkQ4u3mJ9l05H3+K4Vk12qP4osvT6HVeO/w+gq9RbDhWbDY5xKfXECFW0bMxmi70btaFZjHslN3iOIAM1QUtMDyQ0YKkF31sUuI5fFkr6k9vpKG8dqoQH/xYPULLUMFBAZcDhQlbEhY+CNr9tCBDkADAXMbm2mX1M8OW8S2Cm1Jlk6rLrR/6wcAbDGMnOugQ/ijTgh+ahYD50wZ/5iASlQfy7Ok8sKIlZWBo5FSenuin4fSOLy2FRi0bhT9MIqxUTY+56l0XHAMvIydbYodFGdbTYhV7H75rXz6HT3rcHZL8sfglxgHk+ml63mjXuwST9nkZN5ye0s9fkIaaFVif7JzJwpFJdzCYTXJQroa39bSYw2ukJa2On4PfyYLt6ERLO6e3iF+bEkOXvWScpEaDSP/gg7Id/Nbz76Q3pE2zw/AftzmagMTXn86J9kalw5s9m4X1q+Hxq444kzTlwhtEOFyenCmSDk75GE+oexOE67Z4npyw5GEfueR+iANrHc34sTfSLvw0qe1f+wWz1gqBmWI/aIsRMU31QCLdLpSh+mxsKqqguyUuH9ugZuYKy9VBQLWY6Q+BUy2DnOnuI3c5MKdwzCJiBAVIthjglYLJOUMVVhe0fMqr5FyCO8LZ48DUzNsP1tMIm/9740Zsmj/xPRPjpeRT0NCkgXjMywvdPpHfxIBnBeBnRXZygm6fVkWhXQKZuA865dHHTt/w07Swmcu+HYj4J70PWu97/N2fusYJ3JnUpBFKWTF/7nJoheDEQBqbGBuYv0W+RJxEbx8z07hYwnJwVYd3ossqoMQzK2h4UZpm6l0qYuyP3QtA8rzRKc7TsYVOwicNEVL3lLEkjBF4LgXPIeqXmQguBE7TQ/FE7jgz1DXe6o3WIaqIC3VmrBfEVSDk1Q4eI6E8moy3ehFn+3w9tBEnh3NlPmsz/M/WuvKyVPYFjUs8Xz/Q2tO3LHeFRoSOZt+kKm8P6XSUlKajy67259B9gs6AXkJ5yPr0oMxa4x+BN3vux1IKl8Ei0z/sDdkRtv7d90CVui8r6W3qiFrdQxTWrTKObzsD5/xA7+z0yRBaXKam0Sr3uXaMD1/32VRi7RuAmSCJtU1uHdHSN6KvcdDYzh4gjhMJDPBY89jqxsrJg8FDG9K4RfYeegarLUvNu2/pUwfPZWe9NH17Q9VeVoFdHbakHrTCM24AMip+qNwrYF6239kOJ5mIHXEcHIqO+hd98K78dJ/4lQAzRvdpn8UKueATL7qb0BfhUbpC8NDmJvWVZ5x+HyT8SO/p9EyqGzI6ut5XlJGZefuDHBegh7PDXfIfhfyqinq6N8tq+O4a5nSqimz6XF2QHAV+z/7cGpuqFkY5yKyXp4QCetGQWnfW7PdWVEEOdsk5egG3B26Ay5+dHERywzsCltjnaO9SmFzL4+reU8utreZ2Ypo2dkb91I9jH8YFw+YDU0EBMM2z8BdRlctV/DbzVR2rKJHNQ45hJTAM5mg259WF6LhPusiXhlCmMX6XAPLJsyL0qaVHFkQz+RmihiGrH50jMOpmorE5YGbRmkG6xTH6RUx9wtRY/2FYy904juVJHivw+TEMct27WGD84+IoSWE5XTAzuRn9KlJ2ccNvp3KHZniXbAvDrJI4zu/9hfJKYu8ZZ5dig8HFweJ0goOTylQlLxKgF8RLrhsnxUNLdgfHS4ZQzhzJBYKSy7KbChcCMbWCbz2rkShnYKTxgNwQZuY5XoWttIh1ESBzgqgkUVWZ6JVS7AuQU+s5VrsLJ/2x8T4UzhW01mFRL8xW9U4Yts574zPMnt1z7PrfFl4V1bbRXSWG3ivLFiyRlQT8Q3T2U75wNflXTT3qCuhG0+RcQu1jftuue8J/FiQGxEnMifNAo4k9RhICaB4nizfEwfkuZ2lWXwjVXFp/NNPkJj05MxCYAOVIllkdPpuTLVmGoydhLkhjJkyDWHjdRSlEASnwLoWYYlc4uv3LmV9I5eTrQQHkin4AcnHfS8a1PXlZcfHuyPHzAR/Z/xr8Py8uMmjV9Cn/JWsw9EVePYBmT7wgUQL+oXmQV+8s7IbUXfRlTODjkUc+NFtUNJUc4KL424xSqTdkp4h7ftb8fUOnQ7wHSOuTU1+AdGUzSzCkGuvJT8LBdCNCvGYbiIPcptXemK39Dj4nyixOHpo/tApUMWAZDPo0pusmz5Sravr8iw+MTJ0gxTC63LuDnxPv0/q1YY2kQFkEcqz8dS0axfBzifma2/gml3zy2Q0EU+7EX+Z0mwFYe6he2da6ljcbZVkQohHJivr1w4dCRMtrfYiwBiA2u9Onb6j31j9F2m9GZBfpmnHCO6Upj3ZS87Q7WsELkvufDnxB9bQdJs4aji6ukJ9QUvR0XY/UT33EToAKksV2e4kYcYuw15rzCb2mXhSvHYc4xkEtgxBO9sArWrwcmGCCk3a99kOHbmL2T4lp1bg4riUVMLEPBPH/O0zG8qNvbhBiL+1U00+woCwfDjs9zxYCzLb+yYacb2cp9aMqkZGHFFiIpuTXTdVzZmKKWlu0mWVEfcebUUzYIVD/POugy1doPCszPpT50zaYxRLtTtovxR8XWDCY3rIkcol60H3Ah/pvEByXR0YYeOYWq98wnivyaqb9ITO/CGtk5I24WV+iiKSSLGSE7dtuCkbMB0BZiIPCJEhIk7/nwrqTV2HRSYxEKucBoT1WgDu7zVU/lTzWvtA5OL08v8free8BAb/+GR8KdkSkgpUjyFI4JA0u+ZOL7eyV9mz3+DTgI6cNbiwDB/+kdw5E/6+sd3Gp0QbJAxLZIrp4FRuIuF2tVVAssvPZFwfsL+5xbqMjNuVuNlAuEs/0Dy3aANdTjy3JqBjHQoSquYpqbWRUucN5dvgrupJHJSjjw3kX86U27YVnA+KCOsPik/M/5FB3U0Ffee2O+faiAue37Cl88wyKeR+zG/L0lKUUlYpDyZnitX9iKpBxwJesh8ebpJQHbr3G0AMM1TaaPMSn5mFQw4utI69Nbg16tY/Q2cYUnJuht6L1/h06mkTS1T0CtcX/dXZ2vUS7w+f4IprRtEvZcXKAlZ9Vb0NwbVVGeHRuQo5Api+f4pU+JQS2F89qVULKFyy4zUw/zC+19mFGEpKnx2A5aLfOLWtTIwcW7NDn/WEzrHPi/QXIOcPJVZWeZlpwNZCH7RzzuxaUM3xK575OXUUdHesFG9sP+K8nPSjclbmM1SeapsPj+mvdjYE2011+fzqIISgdl1Ndz4Oo0fREJg4XqZ+YlsfTbR1/E6J12WYOAH3q1FDIp+HV1GH28IB8opBdBVU/GWHDO44tOYoJcii/jsB7gJ8LwzFHDfZcFqaRqz9HFH5yNvLCCp7tlaPOaPHva4GMRxb/ovlLBrgXGjlOl+0RbPjGoaaRIBNMBk6bVKbV3K+FPZcy5vfQ/wUKVjaZnMb94ItqxBPWdOGkdzrf+OWSam4QhRsHS4x43Fvt+WR2cK0KEpV0Oay4jr+GKyMPqS//REma2RVP4EPa8Q6AyupW784Dvl1MO4CMSux6LKMzanpHEmwT6h02HtKd451Bi6TNA322ryZhe4U3XTn3Sc5qOTpQ8N75oCiHOpP+33TRSxyNDOsIE7mf4Sq5ZPft3HFAnvrBZUlwyrN3BlNeqFRV8WTdiGpLdr9GR76AAb8Q41h6DJwGsBKPvyxZxIJg4S1MI4/tMFI/TOMb0qphOfPzeixxO2khxVro0A2VbZYQ6+DTdMM+vMnurV3YUw70p59mK0Dq745whC5AUf16FAXWgsyY2yertXGDeeA1C5KCvjg4aFrqrHWymUt7I91emhLe6YATdNoAUVMbZjnKo1SRKxq/F3D1xoEB19RxGiNGzDAjxSGwRn+W4+tFOiIAqVTrB25Z5F/pf8GtACD6n58dNpaHiNdFDNd+6Hngfee+cqgbAp886drU71WkXwmMgbQGxPDxWCJUPaStV+IjAUDhKsuLw+BzptlzjKHgKJaB0pQwG/lXlFvBSGEfi4qUOxt9j/LygfOFkuScGEe3Ezdu89qEYtT0RGxgwEITAb5JhnBF7htFQdgEL4EBFfvRVyJyQq8Sp2V5wq7fjyrpZWJ55xeBv/E8AE65H2vZao0DmxLnhPxXjPW2OKs6v/Yhs2iHKawCtuf4r7/636sH8V4T0Z5aLaudJ+p4/iz8nH/01e/t1VzpOwx9lQ6nKo4xBYvSsdHL7YdwRFT02R/3J1pVYKTWB6O13ku08k+joR+Ao8ZJNwQ78myt+NAYMgxD1mAmQ5TzniTfIuTujlVYGgCSfaWkLV94hHplpYj5fcAVwLbVFh95sKPuIyZtv5lyqnobyj3lTiOThL6U6Md8hKJs4a/e5XccKbyC8/pRGspsnMzrgQpp7D3TPKo76vTnG/1uSlTJrBz3flM/X1tiQnc6w6rhUcSomOBAypz5RZmdXYjYoyQdTq8QJFjwihD/S8dxMCYG3ljiazkCz8zPp04ToBaIZTCeaWbhFDsDrvEQZpou7tXInfgX0ocpbM9+Afj1ZYFlByEF7ohr/3byXy9TN3Kp55goA4rRmVlV8OeTk1ZDhSibsZJ7PK5yW68NGa7P2uqsbyNrmcXxEwwOOF9jItVBOFo1ebaVD5kZ7QUZiT1j9lEXd0ixxQ1e8yflW3UDAUzAAxovD4EwxVdUXM9mve/D/2kQ+TZDE0Ruz1fLu3NYugClnrh6zeSvYQTWA7MIp0daMoIxAozBOxmdBvzth757FOhltOSW45fRa+mnlWr3501n/oTbkPLwNfeAuMM45V/ELjt2ctIcS4w0nS9G1hCGFA5KTW47eD0rF9mwuJ7oHG7O0CeweqRvnYY7mUgZM8P8Ga+p7sktCPX8EMVhDrHbZ3yY04+rf5rYBaTYbwTfHeuO9CNGto/tndwBmbI6SnlPHGn9yFBFxOXR6OljrghZ5Z+m/+uY4pzsl07pH2uyZsps7vWbXlGlM5PdWCPv8Ham5VKtijFgRSyU1eHXX0+XF9HdGY8ZxT5wxEU/FWdHDa7DhivcqkuXkDZ5dcqFJnZodvGDvm/J5ROwt7LJ9VjGHrZW4n8442OpuGPYonFbyf5zl4eiSy3WUN3A0uUXIam/VrVgO4t4eJ9eBhtjSuNZ9BcU7ZSLo1dSMiZU9vrVewU0hvCjRwVMG/5V2bhQnqpoz15YHiD/S9DGYHV9eJLpE8tvfLXx0M9vDKlBJN0DKACk4zjGpWdRxIrStozKi/mQPANWFaeDK/6a0EejelI9WslpbRkXa006XmtWtqNDdg4F3zqUzRfxMHJuXLjXBcKf4p8dNucdfd7uQG2LX+p3PGnxGw/lHROfXALMFvZBX/8/qUwYE/B8wVe21A6Iww9cVMWS67nRj+1X0m3j9R3vNvtRftBYBVT8yR8bDkgB1KdNJPHuTbwhS2t5bsg6N7usTfp66W4VDtZKc8JoN/PgkCZYx+bjMqNv0WS88m/9Un+Nzp4u8i62hQ2NV5KbwASDKZS8Sw6hRKarOLqqSSfAjhlRzuVu6apWNpn4xy1l8A7IA9rZCDYJqbXo0UaJxKjcB2btZG/XDp60/H+xnX7WwaQ1Xjwa5lKCpEHESq7oAaJjoqboGHvwRE7UBUMW9PHNWcQl+0pXUtro/i8ij+LIoWQAYSFj1LdJT7K1bJmA+3wg5FgWFqfHae2VnkW9IjGjer2PLWtwrQqe1Q7aPko35M8alC6V9in29GQV2fYFnrYXlDMoDu9q0+9Td8gV2swfpVJmlVPgePDPhML+ZGsPwBYuxupVz/nMOAgp7HV/nE4+zF0i5aAYroTQ3oJtfF6ckEFS6Kust2Zv1Yr0a+zxl5tVY5pa7DtK546MohR4ODnQUWhurqrSRd51xhKxf/uvcaS3r1T9VEBUK6YQmOUNZ8+wGsQ9qPJ8/fqKUjkc5D7ssY89oUhKP/6q98Sn0OLUOu3cjgp1RBUcwfsrkkdl8htTqmskzU52YKANfZME0CwVTHPFe5d7gVe3SsyNIjC1l0K398sjuX/zUkWcFeKad6ejYFXvLgszinFYeNj64j4TQYXUkJx9OjIIw1zHOYD0lV9TEvSNs2bjRj7U+YN7afD3H34VCPQuuqjloRw0/mnt4BdAb8B+fI6ZEDn0k4BGFxC5iCofHCC7IMKukrbIlRtVhnPLyoaiwFoPCCACaTwfLrdv+uclVztfXxXHYgjvBUjsHOVwgOd1+qOKpJYjMgsAwlWHFbPCISqgdQUXH0LomoCuUXAkijEtXQN06z4fDEqI4Z7N3FnOV1CZ9Gviny+cTKdmD34kcZDS2r29PTckuVCL+YWnCn++4JP0sM6ugF5zR/KACrLwJ/+/C+m1yt0Mlab7Gwlsm58/i/EW6y5qnJ8ton/OTE14AWyd1PCa3fWUiiZqNo9nC5g4Eaj7DR2MpmEz1yV6F46qTxQD94KQoVAUVmcKjppM+IdNX5xV72oTyzikft2dvloMsPjc9E2j+NchsJ4BN8aBB2HZSFNmug66VQXnKuAXVliaQnUvlujgJrxF/MllcRR0bXURZIzj7YGeX9dLPhugIP8Cb0+IWjM+B6QlGidffvi0Qy8o/KgTrauKfy0VTCoLmYHBCpk+Cd/6WxlPZhQzAXhIyidfJUlUw18ZE4CnW5GEgAW0L8Q+S/n/Z9zH57in55xoFzRRc8XZf5gvkNJ2x4osGmAh+KU1uI7gA84VD5YYGaQ09UGHUWmLTB70S1ai92BMtmaLWYs2gQb7Wepnvv+Taf0sMRI5b74amaqN6qfpvCPx5X/A1f8VBfvE3Z2ItJbCIf+UDbIo/PX1alkKs+yBZ1HbrtdvHWSDYSMxWe4H6ImDN1AKpjJ4R9/Fs5jePw5oTSzM5HVtMp/A+5y7zZFgYB6dSXk/l/bN5CZkd65VwtCDLjxCUVikkat+SJ7UnazavtYSWH+q/GWZk2S++zJa7jVGjujvQXCcuSpo+zPLQbrulSKzr9fc5+z0qIQaIh9R4qEE5vTrVtCB58I6Ksr7ZVY4Eqe5evs92IzKAkr3XcBVe1bOnEiMkT0+7W6JoNW7aSR7/cwGcvtANeMXAIde/VRvXdd8c8AFuymwPJh+OUhMrQ39j034ILP5WVPvyOEml2VvxryeJ+o6V+bjSuve/0u/G+rpWbnZKnEjHxrVQkU311Yf1Vllkw7xn0Dhxd1ga9Kh964hqe+8WLUoRS8x4Gu3Q/jqP9VC0CzBszjxMen6vjmYL10c+2HyHaI0eEdpe1ufiLL857h0a2DIDDq39WoMZTXYz0hXDmdSBwWtnpO0OJknUrvSG2sWfwzialSWTDC8PfjZQAIVcC+7xbEtvXJzddm5is/rq8WN91mY4gHs7b1ouycFsqR8VHN0Q1cy5WEkmEjiONKEjqCPIIMp6nbSHLoKtCoSDaSQqVzFpIQYZVKNgcOFqdBfoD9hgv4aCS2qZrf5iDmtRSID8CF8FT5iqGSJ/6Nq//3v777pGdx6u3Fqd6u6ihtaamP/XURFka6zVkBB1M0bkOSpmv7EcuLexRZG+nRuDuygrg9bk4aw731+2ozTwvaSqPcBykXbF7bXPKjjmKQKpG6lqCteeOYcDeeX+Q4JN6B+yWLoRovJs4IlY88xH+ejRt8jjf7bmzr9hyvnv/JL/Fexrxj6rIrNAb3lVC4vU08d4jTW1RAdtjWZWaseHKnqgNzs5lOsfv52awdkDn25iF7YZmoQ5VGNblUE7YrE9RanAK+zFIvh2aEDNYPPVWzfUcvbMwxPkdBsOtse06NcL53nU9gImEPi3j5jhCoMkDhDGfZiFrBoR2/LFSlKZ9j4jBv75XiBMEu3WPvbdKcmHKC+Tx7oYB3i0514f/4e0qHFWJcw4d5gk2wHjuwGjapwsYKnEMmmvHIm8v3QEkbrRqkAf8GIjGo+s77WXaZKfs+YtRZL3Pi2RfCbiF/66YVgPkI9Loy9G93lCv25/56l0mQHlfctud/fjG0tbpB3P8ktmXFje6ziwnqjTPyAqAoJ/5Nf3Xz8J6VFhPg6PHEcRJoZkCX0gm7CSn0g1r9Tnm40FARk453eELPYvVObR0ou3Jq1AxMj3kevk4XgHnruGhHZbpm0/UIZvI7zs82CL9/2TBR82S1Uxe8EdQMVraOBoaJ0N9BuiKZqobahpGNqBxwhuiLhPdxi51E7VOrHYYgBmVmeu4oUYG1WphvgtIKMp+gDrR0Sl9QC7QrfxBFvTyYapQ9OL+oOwsdF4Eklu4dzQ4eGZXgwsoIJ8GvispOAAPsrc0YGF1T79qL81cD/0k5pgOBPWYzmbc/9NNww7P88CzOjXtYhd2Vzzq/EF+GVxk77tTxM/vZks+clyF9ZXNzoWKBdeXlulj/TxhXum7w6cO1BmJPY578P7SAXnx5Ql96WokNJABD8L3MPKAkSzBC38w855EYS3a1oaSwmGx4V3o8MpXpRNQ1gkiL5lEltQP1T45cZc2rGgECLKty2AY+I8rUhYfv9QlQrV+QVX1lhs452dzf4dfzDIWmzt1Gm5mHXVjiOUbxT4b4scaJA9YFV5HyZGOGRldF9wG41a8UJKk0Y38lwUNGVitR6374K3NGYtvVegVO8dyoyQJ2ezxBDsTT8UHsMJWzI3YS84EjtjgiWmkUwB2UgaflXl62Kb7UJDmS4/Dp8KQu/bwjUCJfmpUC/DeI+Lkm/yAV0RLkfA9N8Sc57WHB6y5SoqQqJkzfEMcODCS5BmrrkcLFu9MkFn4cw/gXiaVwoXUQez0cYe/Yz/r3/EEv2u9fp/yV5+F/4vHLyFj61LDCzpUadOqfnevmnFEo+I8kDpeWHSp1ovJenK1HsTVrIGGENZrMW+oyIja/OSxcfDbky+CsfoUwJHyZPkHK0cqb+LYYlXCU5pHXmMpX+7xk/bZAH42mi0ERLya1eFiYgSGNvo2Wf8LgUD/21BoDMvWPrA0GRYNMtJywG+IIVskJsI02Ef1vfgpSuaANmX+Wg+Cc5QN0WjhzKYaD1Qv6ai+KPBSo3W3zzuyho+bLem11xtZ//oXEVKZYI6jIl/aKGPjt7BDa62EWi5w5nLost/YB+BgnxXSZwGYChGNY4qvMcSFOu43gtO7LDHMQ5G5W2A5DsSiccxHlv6X7aleNvfMpvnr0a8IbEJF86h28zVtQekXfAmhcyqY3Em84alUvT5MA469TgBnmXwbxkPxFW/kKRi2QeLK3D/GJyToOpzDBQNVVVolavNmU+ZkHuVL7SPN6kuW1Oxp/t/d+OXktcYnVHQ1+Mt0SW7xOCZ1etKtqiaoqTTsL0+mbfok3Qd3fEmzYrjBQ15gSUbTs3edztTTxcqkUnnxb5V+jeP2TaPk14EBvgBfJ83kptWCoAuK5w98mJvMebFH+Zk9hmMHRvKsj85+V3Jg3wROv7SPup09h7/W7Q497LU0SFQQfOiP1x5tuVUMgbg5qRXfLrixRILKfUqnMD9ca88tyESGiosf9UOJPpJeXamqlIi53tFopcBz7QY1pQravChCDWqg/c33fU69F+acewQBsOUjwfGGeCWkOGtaU1308nkqcHc73XgR0GHROImD8Iw6jLgO37YvQ4Ptysk5woXOVb2Dur55Kplh/q13sozmfW7SAUDHS1moGjZV8YOF6wj6AAU5YF48Shjurlu8YcVCGsGtLBkauCich8qrlGKihjIJOzUs2rGdD6xJlPw8eu5RRe9upOD7gyXZYw3hR5Nvtz+VSIBSEA8sBfz3N+ybyAAA=" alt="VortexFuse logo" class="h-9 w-9 rounded-full object-cover ring-2 ring-white/10" />
+            <span class="font-display font-bold text-lg text-white">Vortex<span class="swirl-text">Fuse</span>
+          </span>
+        </div>
+        <p class="text-sm leading-relaxed">Built by engineers, for engineers-in-the-making. One hub for every mock test between you and your dream branch.</p>
+      </div>
+      <div>
+        <p class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Platform</p>
+        <ul class="space-y-2.5 text-sm">
+          <li>
+            <a href="#tests" class="hover:text-ember-400 transition-colors">Test Series</a>
+          </li>
+          <li>
+            <a href="#schedule" class="hover:text-ember-400 transition-colors">CBT Schedule</a>
+          </li>
+          <li>
+            <a href="#announcements" class="hover:text-ember-400 transition-colors">Announcements</a>
+          </li>
+          <li>
+            <a href="#community" class="hover:text-ember-400 transition-colors">Community</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Resources</p>
+        <ul class="space-y-2.5 text-sm">
+          <li>
+            <a href="#" class="hover:text-ember-400 transition-colors">Syllabus (JEE Main)</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-ember-400 transition-colors">Syllabus (JEE Advanced)</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-ember-400 transition-colors">Answer Key Archive</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-ember-400 transition-colors">Rank Predictor</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Get the App</p>
+        <p class="text-sm mb-4">Never miss a live test. Get instant pings the second a new CBT window opens.</p>
+        <a href="#community" class="inline-flex items-center gap-2 bg-white/5 border border-white/10 hover:border-ember-500/50 hover:text-white text-sm font-medium px-4 py-2.5 rounded-lg transition-colors">
+          <i class="fa-brands fa-telegram text-ember-500">
+          </i> Join on Telegram
+        </a>
+      </div>
+    </div>
+    <div class="border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <p>&copy; <span id="footer-year">
+        </span> VortexFuse. All rights reserved. Not affiliated with NTA.</p>
+        <p class="flex items-center gap-1.5">
+          <i class="fa-solid fa-shield-halved text-ember-500">
+          </i> Precision practice, engineered daily.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- =========================================================================================
+    ANNOUNCEMENT DETAIL MODAL
+    ========================================================================================= -->
+    <div id="notice-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 modal-backdrop">
+      <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative animate-fadeUp max-h-[85vh] overflow-y-auto">
+        <button data-close-modal class="absolute top-4 right-4 h-8 w-8 flex items-center justify-center rounded-full hover:bg-slate-100 text-slate-500" aria-label="Close">
+          <i class="fa-solid fa-xmark">
+          </i>
+        </button>
+        <div id="notice-modal-body">
+        </div>
+      </div>
+    </div>
+    <!-- =========================================================================================
+    TEST SYLLABUS / INSTRUCTIONS MODAL
+    ========================================================================================= -->
+    <div id="test-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 modal-backdrop">
+      <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl relative animate-fadeUp max-h-[85vh] overflow-y-auto">
+        <button data-close-modal class="absolute top-4 right-4 h-8 w-8 flex items-center justify-center rounded-full hover:bg-slate-100 text-slate-500" aria-label="Close">
+          <i class="fa-solid fa-xmark">
+          </i>
+        </button>
+        <div id="test-modal-body">
+        </div>
+      </div>
+    </div>
+    <script>
+/* =============================================================================================
+   VORTEXFUSE — DATA LAYER
+   -----------------------------------------------------------------------------------------
+   Everything below is plain data. All four lists start EMPTY so the live site shows nothing
+   until you add real content — just paste an object into the matching array using the exact
+   same shape as the commented example. Editable straight from a phone: no other code changes.
+============================================================================================= */
 
-</body>
+// ---------------------------------------------------------------------------
+// 1. TEST SERIES DATA — currently empty. Example shape to copy when adding a test:
+// {
+//   title: "Full Syllabus Mock Test #1",
+//   category: "jee-main",       // 'jee-main' | 'jee-advanced'
+//   scope: "full-syllabus",     // 'full-syllabus' | 'chapter-wise'
+//   subject: "Physics, Chemistry, Maths",
+//   duration: "180 mins",
+//   marks: "300 marks",
+//   questions: 90,
+//   date: "2026-08-24T09:00:00",
+//   status: "live",             // 'live' | 'upcoming' | 'closed'
+//   fileUrl: "mock-1.html",
+//   syllabus: "Describe the syllabus and instructions for this test here."
+// }
+// ---------------------------------------------------------------------------
+const TESTS = [];
+
+// ---------------------------------------------------------------------------
+// 2. ANNOUNCEMENTS — currently empty. Example shape:
+// {
+//   tag: "Exam Date",           // 'Exam Date' | 'Syllabus Update' | 'Answer Key' | 'Platform'
+//   title: "Headline goes here",
+//   summary: "One or two line summary shown on the card.",
+//   date: "20 Aug 2026",
+//   full: "Full announcement text shown inside the read-more modal."
+// }
+// ---------------------------------------------------------------------------
+const ANNOUNCEMENTS = [];
+
+// ---------------------------------------------------------------------------
+// 3. SCHEDULE / TIMELINE — currently empty. Example shape:
+// { title: "Full Syllabus Mock Test #1", date: "2026-08-24T09:00:00", type: "Full Syllabus · JEE Main" }
+// ---------------------------------------------------------------------------
+const SCHEDULE = [];
+
+// ---------------------------------------------------------------------------
+// 4. COMMUNITY / DISCUSSION LINKS — currently empty. Example shape:
+// {
+//   name: "VortexFuse Announcements",
+//   desc: "What this channel/group is for.",
+//   members: "0",
+//   icon: "fa-bullhorn",        // any Font Awesome 6 class
+//   platform: "Telegram Channel",
+//   url: "https://t.me/your_channel",
+// }
+// ---------------------------------------------------------------------------
+const COMMUNITY_LINKS = [];
+
+/* =============================================================================================
+   RENDER LAYER — reads the data arrays above and paints the UI. No edits needed here for
+   day-to-day content changes.
+============================================================================================= */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  // ---------- Footer year ----------
+  document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+  // ---------- Mobile menu ----------
+  const menuBtn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    const isHidden = menu.classList.contains('hidden');
+    menu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(isHidden));
+    menuBtn.innerHTML = isHidden ? '<i class="fa-solid fa-xmark text-lg"></i>' : '<i class="fa-solid fa-bars text-lg"></i>';
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.add('hidden');
+    menuBtn.innerHTML = '<i class="fa-solid fa-bars text-lg"></i>';
+  }));
+
+  // ---------- Sticky header shadow on scroll ----------
+  const header = document.getElementById('site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('shadow-xl', window.scrollY > 8);
+  });
+
+  /* ===========================================================================================
+     TICKER — cycles through announcement headlines, or shows an empty-state line
+  =========================================================================================== */
+  const tickerTrack = document.getElementById('ticker-track');
+  const tickerEmpty = document.getElementById('ticker-empty');
+  if (ANNOUNCEMENTS.length === 0) {
+    tickerTrack.classList.add('hidden');
+    tickerEmpty.classList.remove('hidden');
+  } else {
+    const tickerItems = ANNOUNCEMENTS.map(a =>
+      `<span class="flex items-center gap-2"><i class="fa-solid fa-circle text-[5px] text-ember-500"></i>${escapeHTML(a.title)}</span>`
+    ).join('');
+    tickerTrack.innerHTML = tickerItems + tickerItems; // duplicated for seamless loop
+  }
+
+  // Notification dot only shows when there's something new to read
+  document.getElementById('notif-dot').classList.toggle('hidden', ANNOUNCEMENTS.length === 0);
+
+  /* ===========================================================================================
+     LIVE METRIC COUNTERS
+  =========================================================================================== */
+  document.querySelectorAll('[data-counter]').forEach(el => {
+    const target = parseInt(el.getAttribute('data-counter'), 10);
+    if (!target) { el.textContent = '0'; return; }
+    let current = 0;
+    const steps = 40;
+    const increment = Math.max(1, Math.ceil(target / steps));
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= target) { current = target; clearInterval(timer); }
+      el.textContent = current.toLocaleString('en-IN');
+    }, 30);
+  });
+
+  /* ===========================================================================================
+     ANNOUNCEMENTS — dismissible cards + modal
+  =========================================================================================== */
+  const noticeList = document.getElementById('announcement-list');
+  const tagStyles = {
+    "Exam Date": "bg-ember-50 text-ember-700 ring-1 ring-ember-200",
+    "Syllabus Update": "bg-volt-50 text-volt-700 ring-1 ring-sky-200",
+    "Answer Key": "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200",
+    "Platform": "bg-slate-100 text-slate-700 ring-1 ring-slate-200",
+  };
+
+  function emptyState(icon, title, subtitle) {
+    return `
+      <div class="col-span-full flex flex-col items-center justify-center text-center py-16 px-6 rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50/60">
+        <div class="h-14 w-14 rounded-full bg-gradient-to-br from-volt-500/10 to-ember-500/10 flex items-center justify-center mb-4">
+          <i class="fa-solid ${icon} text-xl bg-gradient-to-r from-volt-500 to-ember-500 bg-clip-text text-transparent"></i>
+        </div>
+        <p class="font-display font-semibold text-ink-800 text-base">${title}</p>
+        <p class="text-slate-400 text-sm mt-1.5 max-w-xs">${subtitle}</p>
+      </div>`;
+  }
+
+  function renderAnnouncements() {
+    if (ANNOUNCEMENTS.length === 0) {
+      noticeList.innerHTML = emptyState('fa-bullhorn', 'No announcements yet', 'Add an entry to the ANNOUNCEMENTS array and it will appear here instantly.');
+      return;
+    }
+    noticeList.innerHTML = ANNOUNCEMENTS.map((a, i) => `
+      <div class="fade-item relative bg-white rounded-2xl border border-slate-100 shadow-card card-lift hover:shadow-card-hover p-5" data-fade style="animation-delay:${i * 0.05}s" data-notice-index="${i}">
+        <button data-dismiss="${i}" class="absolute top-3.5 right-3.5 h-7 w-7 flex items-center justify-center rounded-full text-slate-300 hover:text-slate-500 hover:bg-slate-100 transition-colors" aria-label="Dismiss">
+          <i class="fa-solid fa-xmark text-xs"></i>
+        </button>
+        <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${tagStyles[a.tag] || tagStyles['Platform']}">${a.tag}</span>
+        <h3 class="font-display font-semibold text-ink-900 text-base mt-3 pr-4 leading-snug">${escapeHTML(a.title)}</h3>
+        <p class="text-slate-500 text-sm mt-2 leading-relaxed">${escapeHTML(a.summary)}</p>
+        <div class="mt-4 flex items-center justify-between">
+          <span class="text-xs text-slate-400">${a.date}</span>
+          <button data-read-more="${i}" class="text-xs font-semibold text-ember-600 hover:text-ember-700 inline-flex items-center gap-1">Read more <i class="fa-solid fa-arrow-right text-[10px]"></i></button>
+        </div>
+      </div>
+    `).join('');
+
+    triggerFadeIns();
+  }
+  renderAnnouncements();
+
+  noticeList.addEventListener('click', (e) => {
+    const dismissBtn = e.target.closest('[data-dismiss]');
+    const readBtn = e.target.closest('[data-read-more]');
+    if (dismissBtn) {
+      const idx = Number(dismissBtn.dataset.dismiss);
+      ANNOUNCEMENTS.splice(idx, 1);
+      renderAnnouncements();
+      return;
+    }
+    if (readBtn) {
+      const idx = Number(readBtn.dataset.readMore);
+      openNoticeModal(ANNOUNCEMENTS[idx]);
+    }
+  });
+
+  function openNoticeModal(a) {
+    document.getElementById('notice-modal-body').innerHTML = `
+      <span class="inline-block text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${tagStyles[a.tag] || tagStyles['Platform']}">${a.tag}</span>
+      <h3 class="font-display font-bold text-ink-900 text-xl mt-3 leading-snug">${escapeHTML(a.title)}</h3>
+      <p class="text-xs text-slate-400 mt-1">${a.date}</p>
+      <p class="text-slate-600 text-sm leading-relaxed mt-4">${escapeHTML(a.full)}</p>
+    `;
+    openModal('notice-modal');
+  }
+
+  document.getElementById('notif-btn').addEventListener('click', () => {
+    document.getElementById('announcements').scrollIntoView({ behavior: 'smooth' });
+  });
+  document.getElementById('view-all-notices').addEventListener('click', () => {
+    document.getElementById('announcements').scrollIntoView({ behavior: 'smooth' });
+  });
+
+  /* ===========================================================================================
+     TEST SERIES HUB — filters, search, render, modal
+  =========================================================================================== */
+  const FILTERS = [
+    { key: 'all', label: 'All Tests' },
+    { key: 'jee-main', label: 'JEE Main' },
+    { key: 'jee-advanced', label: 'JEE Advanced' },
+    { key: 'full-syllabus', label: 'Full Syllabus' },
+    { key: 'chapter-wise', label: 'Chapter-wise' },
+  ];
+  let activeFilter = 'all';
+  let searchQuery = '';
+
+  const filterTabs = document.getElementById('filter-tabs');
+  filterTabs.innerHTML = FILTERS.map(f => `
+    <button data-filter="${f.key}"
+      class="tab-btn ${f.key === 'all' ? 'active' : ''} shrink-0 px-4 py-2 rounded-full text-sm font-semibold text-ink-700 bg-white border border-slate-200 hover:border-ember-300 transition-all">
+      ${f.label}
+    </button>
+  `).join('');
+
+  filterTabs.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-filter]');
+    if (!btn) return;
+    activeFilter = btn.dataset.filter;
+    filterTabs.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderTests();
+  });
+
+  document.getElementById('test-search').addEventListener('input', (e) => {
+    searchQuery = e.target.value.trim().toLowerCase();
+    renderTests();
+  });
+
+  const statusStyles = {
+    live: { dot: 'bg-emerald-500', text: 'text-emerald-700', bg: 'bg-emerald-50 ring-1 ring-emerald-200', label: 'Live Now' },
+    upcoming: { dot: 'bg-amber-500', text: 'text-amber-700', bg: 'bg-amber-50 ring-1 ring-amber-200', label: 'Upcoming' },
+    closed: { dot: 'bg-slate-400', text: 'text-slate-500', bg: 'bg-slate-100 ring-1 ring-slate-200', label: 'Closed' },
+  };
+  const examBadge = {
+    'jee-main': { label: 'JEE Main', style: 'bg-ink-800 text-white' },
+    'jee-advanced': { label: 'JEE Advanced', style: 'bg-gradient-to-r from-volt-500 to-ember-500 text-white' },
+  };
+
+  const testGrid = document.getElementById('test-grid');
+
+  function renderTests() {
+    if (TESTS.length === 0) {
+      testGrid.innerHTML = emptyState('fa-file-circle-plus', 'No tests published yet', 'Add a test to the TESTS array with a title, category and fileUrl — it will show up here right away.');
+      return;
+    }
+
+    const filtered = TESTS.filter(t => {
+      const matchesFilter = activeFilter === 'all' || t.category === activeFilter || t.scope === activeFilter;
+      const haystack = (t.title + ' ' + t.subject).toLowerCase();
+      const matchesSearch = !searchQuery || haystack.includes(searchQuery);
+      return matchesFilter && matchesSearch;
+    });
+
+    if (filtered.length === 0) {
+      testGrid.innerHTML = emptyState('fa-magnifying-glass', 'No matching tests', 'Try a different keyword or switch the filter above.');
+      return;
+    }
+
+    testGrid.innerHTML = filtered.map((t) => {
+      const s = statusStyles[t.status];
+      const badge = examBadge[t.category];
+      const dateFmt = new Date(t.date).toLocaleString('en-IN', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' });
+      return `
+      <div class="fade-item bg-white rounded-2xl border border-slate-100 shadow-card card-lift hover:shadow-card-hover hover:border-ember-200 p-5 flex flex-col" data-fade>
+        <div class="flex items-start justify-between gap-3 mb-3">
+          <span class="text-[11px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-lg ${badge.style}">${badge.label}</span>
+          <span class="inline-flex items-center gap-1.5 text-[11px] font-semibold px-2.5 py-1 rounded-full ${s.bg} ${s.text}">
+            <span class="h-1.5 w-1.5 rounded-full ${s.dot} ${t.status === 'live' ? 'live-dot' : ''}"></span>${s.label}
+          </span>
+        </div>
+
+        <h3 class="font-display font-semibold text-ink-900 text-base leading-snug">${escapeHTML(t.title)}</h3>
+        <p class="text-slate-400 text-xs mt-1">${escapeHTML(t.subject)}</p>
+
+        <div class="grid grid-cols-3 gap-2 mt-4 text-center">
+          <div class="bg-slate-50 rounded-lg py-2">
+            <p class="text-[13px] font-semibold text-ink-800">${t.duration}</p>
+            <p class="text-[10px] text-slate-400 mt-0.5">Duration</p>
+          </div>
+          <div class="bg-slate-50 rounded-lg py-2">
+            <p class="text-[13px] font-semibold text-ink-800">${t.marks}</p>
+            <p class="text-[10px] text-slate-400 mt-0.5">Marks</p>
+          </div>
+          <div class="bg-slate-50 rounded-lg py-2">
+            <p class="text-[13px] font-semibold text-ink-800">${t.questions} Qs</p>
+            <p class="text-[10px] text-slate-400 mt-0.5">Questions</p>
+          </div>
+        </div>
+
+        <p class="text-xs text-slate-400 mt-3 flex items-center gap-1.5"><i class="fa-regular fa-clock"></i> ${dateFmt}</p>
+
+        <div class="mt-4 pt-4 border-t border-slate-100 flex items-center gap-2">
+          <a href="${t.fileUrl}" class="flex-1 text-center bg-gradient-to-r from-volt-500 to-ember-500 hover:shadow-glow text-white text-sm font-semibold py-2.5 rounded-xl transition-all">
+            Start Exam
+          </a>
+          <button data-syllabus-index="${TESTS.indexOf(t)}" class="h-[42px] w-[42px] flex items-center justify-center rounded-xl border border-slate-200 text-slate-500 hover:border-ember-300 hover:text-ember-600 transition-colors" aria-label="View syllabus and instructions">
+            <i class="fa-regular fa-file-lines"></i>
+          </button>
+        </div>
+      </div>`;
+    }).join('');
+
+    triggerFadeIns();
+  }
+  renderTests();
+
+  testGrid.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-syllabus-index]');
+    if (!btn) return;
+    const t = TESTS[Number(btn.dataset.syllabusIndex)];
+    const badge = examBadge[t.category];
+    document.getElementById('test-modal-body').innerHTML = `
+      <span class="text-[11px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-lg ${badge.style}">${badge.label}</span>
+      <h3 class="font-display font-bold text-ink-900 text-xl mt-3 leading-snug">${escapeHTML(t.title)}</h3>
+      <div class="flex flex-wrap gap-2 mt-3 text-xs text-slate-500">
+        <span class="bg-slate-100 px-2.5 py-1 rounded-full"><i class="fa-regular fa-clock mr-1"></i>${t.duration}</span>
+        <span class="bg-slate-100 px-2.5 py-1 rounded-full"><i class="fa-solid fa-star mr-1"></i>${t.marks}</span>
+        <span class="bg-slate-100 px-2.5 py-1 rounded-full"><i class="fa-solid fa-list-ol mr-1"></i>${t.questions} Questions</span>
+      </div>
+      <h4 class="font-semibold text-ink-800 text-sm mt-5 mb-2">Syllabus &amp; Instructions</h4>
+      <p class="text-slate-600 text-sm leading-relaxed">${escapeHTML(t.syllabus)}</p>
+      <a href="${t.fileUrl}" class="mt-6 inline-flex w-full items-center justify-center gap-2 bg-gradient-to-r from-volt-500 to-ember-500 text-white font-semibold py-3 rounded-xl shadow-glow hover:-translate-y-0.5 transition-transform">
+        <i class="fa-solid fa-bolt"></i> Start Exam
+      </a>
+    `;
+    openModal('test-modal');
+  });
+
+  /* ===========================================================================================
+     SCHEDULE TIMELINE
+  =========================================================================================== */
+  const timelineList = document.getElementById('timeline-list');
+  const now = new Date();
+  const sortedSchedule = [...SCHEDULE].sort((a, b) => new Date(a.date) - new Date(b.date));
+
+  if (sortedSchedule.length === 0) {
+    timelineList.innerHTML = `
+      <li class="ml-6 relative">
+        <span class="absolute -left-[29px] top-1 h-3.5 w-3.5 rounded-full bg-white/20 ring-4 ring-ink-900"></span>
+        <p class="text-slate-400 text-sm">No tests scheduled yet — add dates to the SCHEDULE array and your roadmap appears here.</p>
+      </li>`;
+  } else {
+    timelineList.innerHTML = sortedSchedule.map(item => {
+      const d = new Date(item.date);
+      const isPast = d < now;
+      const dateFmt = d.toLocaleString('en-IN', { day: '2-digit', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit' });
+      return `
+        <li class="ml-6 relative">
+          <span class="absolute -left-[29px] top-1 h-3.5 w-3.5 rounded-full ${isPast ? 'bg-slate-500' : 'bg-ember-500 live-dot'} ring-4 ring-ink-900"></span>
+          <p class="text-white font-semibold text-sm">${escapeHTML(item.title)}</p>
+          <p class="text-slate-400 text-xs mt-1">${item.type}</p>
+          <p class="text-ember-400 text-xs font-mono-num mt-1">${dateFmt}</p>
+        </li>`;
+    }).join('');
+  }
+
+  /* ===========================================================================================
+     LIVE COUNTDOWN — targets the next upcoming item in SCHEDULE
+  =========================================================================================== */
+  const nextEvent = sortedSchedule.find(item => new Date(item.date) > now) || null;
+  const countdownCta = document.getElementById('countdown-cta');
+
+  if (nextEvent) {
+    document.getElementById('countdown-title').textContent = nextEvent.title;
+  } else {
+    document.getElementById('countdown-title').textContent = 'No tests scheduled yet';
+    countdownCta.classList.add('opacity-40', 'pointer-events-none');
+  }
+
+  function updateCountdown() {
+    if (!nextEvent) return;
+    const diff = new Date(nextEvent.date) - new Date();
+    const el = (id, v) => document.getElementById(id).textContent = String(Math.max(v, 0)).padStart(2, '0');
+    if (diff <= 0) {
+      el('cd-days', 0); el('cd-hours', 0); el('cd-mins', 0); el('cd-secs', 0);
+      document.getElementById('countdown-title').textContent = nextEvent.title + ' — Live now';
+      return;
+    }
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins = Math.floor((diff / (1000 * 60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+    el('cd-days', days); el('cd-hours', hours); el('cd-mins', mins); el('cd-secs', secs);
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  /* ===========================================================================================
+     COMMUNITY GRID
+  =========================================================================================== */
+  const communityGrid = document.getElementById('community-grid');
+  if (COMMUNITY_LINKS.length === 0) {
+    communityGrid.innerHTML = emptyState('fa-users', 'No community links yet', 'Add your Telegram or WhatsApp links to the COMMUNITY_LINKS array to show them here.');
+  } else {
+    communityGrid.innerHTML = COMMUNITY_LINKS.map((c, i) => `
+      <div class="fade-item bg-white rounded-2xl border border-slate-100 shadow-card card-lift hover:shadow-card-hover hover:border-ember-200 p-5 flex flex-col" data-fade style="animation-delay:${i * 0.05}s">
+        <div class="flex items-center gap-3 mb-3">
+          <span class="h-11 w-11 rounded-xl bg-gradient-to-br from-ink-800 to-ink-950 flex items-center justify-center text-ember-400 text-lg shrink-0">
+            <i class="fa-solid ${c.icon}"></i>
+          </span>
+          <div>
+            <p class="font-display font-semibold text-ink-900 text-sm leading-tight">${escapeHTML(c.name)}</p>
+            <p class="text-[11px] text-slate-400 mt-0.5">${c.platform} · ${c.members} members</p>
+          </div>
+        </div>
+        <p class="text-slate-500 text-sm leading-relaxed flex-1">${escapeHTML(c.desc)}</p>
+        <a href="${c.url}" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center justify-center gap-2 border border-slate-200 hover:border-ember-400 hover:bg-ember-50 hover:text-ember-700 text-ink-700 text-sm font-semibold py-2.5 rounded-xl transition-all">
+          Join now <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+        </a>
+      </div>
+    `).join('');
+  }
+
+  /* ===========================================================================================
+     MODAL HELPERS
+  =========================================================================================== */
+  function openModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(id) {
+    const modal = document.getElementById(id);
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+  }
+  document.querySelectorAll('[data-close-modal]').forEach(btn => {
+    btn.addEventListener('click', (e) => closeModal(e.target.closest('[id]').id));
+  });
+  [document.getElementById('notice-modal'), document.getElementById('test-modal')].forEach(modal => {
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(modal.id); });
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { closeModal('notice-modal'); closeModal('test-modal'); }
+  });
+
+  /* ===========================================================================================
+     SCROLL FADE-IN OBSERVER
+  =========================================================================================== */
+  function triggerFadeIns() {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('[data-fade]:not(.in)').forEach(el => observer.observe(el));
+  }
+  triggerFadeIns();
+
+  /* ===========================================================================================
+     UTIL
+  =========================================================================================== */
+  function escapeHTML(str) {
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+});
+</script>
+  </body>
 </html>
