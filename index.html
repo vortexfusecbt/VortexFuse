@@ -1,17 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>VortexFuse CBT Dashboard</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VortexFuse CBT Dashboard</title>
+    <!-- Pulling in Tailwind CSS for a modern layout -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>VortexFuse Live Tests</h1>
-    <p>Select a test below to begin:</p>
-    <!-- Replace these with your actual file names -->
-    <ul>
-        <li><a href="jee-main-test-1.html">JEE Main Mock Test 1</a></li>
-        <li><a href="jee-adv-paper-1.html">JEE Advanced Paper 1</a></li>
-    </ul>
+<body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col items-center p-6">
+    
+    <div class="max-w-2xl w-full mt-10">
+        <!-- Header Section -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-bold text-blue-400 mb-2">VortexFuse</h1>
+            <p class="text-gray-400">Live Computer-Based Test Dashboard</p>
+        </div>
+
+        <!-- Tests Container -->
+        <div class="bg-gray-800 rounded-lg shadow-lg p-6">
+            <h2 class="text-xl font-semibold mb-4 border-b border-gray-700 pb-2">Available Tests</h2>
+            
+            <div class="space-y-4">
+                
+                <!-- TEST LINK 1:QAPT3_Share.html -->
+                <a href="YOUR_FILE_NAME_HERE.html" class="block bg-gray-700 hover:bg-blue-600 transition duration-300 rounded-md p-4 flex justify-between items-center">
+                    <span class="font-medium text-lg">JEE Main Mock Test 1</span>
+                    <span class="text-sm bg-blue-500 px-3 py-1 rounded-full">Attempt</span>
+                </a>
+
+                <!-- TEST LINK 2: Replace YOUR_SECOND_FILE_NAME_HERE.html with your actual file name -->
+                <a href="YOUR_SECOND_FILE_NAME_HERE.html" class="block bg-gray-700 hover:bg-blue-600 transition duration-300 rounded-md p-4 flex justify-between items-center">
+                    <span class="font-medium text-lg">JEE Advanced Paper 1</span>
+                    <span class="text-sm bg-blue-500 px-3 py-1 rounded-full">Attempt</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
- 
